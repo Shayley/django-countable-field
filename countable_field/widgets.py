@@ -41,19 +41,19 @@ class CountableWidget(widgets.Textarea):
         if count_direction == 'down':
             count_label = "Words remaining: "
             if count_type == "characters":
-                count_label = "Characters remaining: "
+                count_label = "Letters resterend: "
             elif count_type == "paragraphs":
-                count_label = "Paragraphs remaining: "
+                count_label = "Paragrafen resterend: "
             elif count_type == "sentences":
-                count_label = "Sentences remaining: "
+                count_label = "Zinnen resterend: "
         else:
             count_label = "Word count: "
             if count_type == "characters":
-                count_label = "Character count: "
+                count_label = "Letters over: "
             elif count_type == "paragraphs":
-                count_label = "Paragraph count: "
+                count_label = "Paragrafen over: "
             elif count_type == "sentences":
-                count_label = "Sentence count: "
+                count_label = "Zinnen over: "
         return (
                  '<span class="text-count" id="%(id)s_counter">%(label)s'
                  '<span class="text-count-current">%(number)s</span></span>\r\n'
